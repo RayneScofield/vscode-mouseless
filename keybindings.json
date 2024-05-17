@@ -42,6 +42,15 @@
     "command": "workbench.view.explorer"
   },
   {
+    "key": "ctrl+l",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "ctrl+h",
+    "when": "sideBarFocus",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
     "key": "ctrl+e",
     "command": "-actions.findWithSelection"
   },
