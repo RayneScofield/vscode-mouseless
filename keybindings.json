@@ -43,7 +43,8 @@
   },
   {
     "key": "ctrl+l",
-    "command": "workbench.view.explorer"
+    "command": "workbench.view.explorer",
+    "when": "vim.mode !='Insert'"
   },
   {
     "key": "ctrl+h",
@@ -165,8 +166,9 @@
     "key": "ctrl+j",
     "command": "-workbench.action.togglePanel"
   },
-  {
+    {
     "key": "alt+j",
+    "when": "editorTextFocus && !editorReadonly",
     "command": "editor.action.moveLinesDownAction"
   },
   {
