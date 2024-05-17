@@ -1,4 +1,20 @@
 {
+    "workbench.settings.editor": "json",
+    // Theme
+  "workbench.colorTheme": "Aura Dark",
+  // Aura theme customisation
+  "workbench.colorCustomizations": {
+    "[Aura Dark]": {
+      "editor.background": "#110f17",
+      "terminal.background": "#110f17",
+      "activityBar.background": "#110f17",
+      "statusBar.background": "#110f17",
+      "editorGroupHeader.tabsBackground": "#110f17",
+      "tab.inactiveBackground": "#110f17"
+    }
+  },
+
+  
   "vim.vimrc.enable": true,
   "vim.vimrc.path": "$HOME/.vscodevimrc",
   "vim.leader": "<space>",
@@ -16,8 +32,11 @@
     "<C-b>": false,
     "<C-c>": false,
     "<C-d>": false,
+    "<C-e>": false,
     "<C-f>": false,
     "<C-g>": false,
+    "<C-u>": false,
+    "<C-w>": false,
     "<C-v>": false,
     "<C-x>": false,
     "<C-p>": false
@@ -56,6 +75,10 @@
     {
       "before": ["<S-tab>"],
       "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["<leader>", ";"],
+      "commands": ["workbench.action.showCommands"]
     },
     {
       "before": ["<leader>", "m"],
